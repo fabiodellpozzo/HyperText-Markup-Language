@@ -555,14 +555,7 @@ font-weight: bold;
             <tbody>
               <tr>
 
-                <td>
-                  <div class="preform">
-                    <pre class="preformPre"><span></span>&lt;article</span>&gt; &lt;/<span>article</span>&gt;</pre>
-                  </div>
-                </td>
-                <td>Usado para posicionar o artigo em um documento.</td>
-
-              </tr>
+        
 
            
               <tr>
@@ -572,7 +565,11 @@ font-weight: bold;
                   </div>
                 </td>
 
-                <td></td>
+                <td>
+                  Se o elemento tiver um atributo, então ele representa um hiperlink (uma âncora de hipertexto) rotulado por seu conteúdo.ahref
+
+Se o elemento não tiver nenhum atributo, então o elemento representa um espaço reservado para onde um link poderia estar colocado, se fosse relevante, consistindo apenas no conteúdo do elemento.ahref
+                </td>
 
               </tr>
 
@@ -583,7 +580,11 @@ font-weight: bold;
                   </div>
                 </td>
 
-                <td></td>
+                <td>
+                  O elemento representa uma abreviação ou acrônimo, opcionalmente com sua expansão. O atributo title pode ser usado para fornecer uma expansão do atributo abreviação. O atributo, se especificado, deve conter uma expansão da abreviatura, e nada mais.abbr
+
+O parágrafo abaixo contém uma abreviação marcada com o elemento. Este parágrafo define o termo
+                </td>
                 
               </tr>
 
@@ -713,7 +714,7 @@ font-weight: bold;
         </div>
 
         <h4 id="estrutura">
-          DOM - Estrutura básica 
+          DOM interface - Estrutura básica 
           <a class="anchor-link" href="#estrutura" aria-label="Estrutura: HTML5"></a>
         </h4>
 
