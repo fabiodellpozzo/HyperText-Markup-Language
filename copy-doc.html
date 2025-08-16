@@ -216,7 +216,7 @@
           <hr class="d-lg-none text-white-50">
           <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
             <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="https://github.com/fabiodellpozzo" rel="noopener">
+              <a class="nav-link py-2 px-0 px-lg-2" href="#" rel="noopener">
                 <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" class="navbar-nav-svg"
                   viewBox="0 0 512 499.36" role="img">
                   <title>GitHub</title>
@@ -505,7 +505,7 @@
               <li><a href="#intro">Introdução</a>
                 <ul>
                   <li><a id="estrutura" href="#estrutura">Estrutura básica.</a></li>
-                  <li><a id="element" href="#element">Elementos.</a></li>
+                  <li><a id="elementos" href="#elementos">Elementos.</a></li>
                 </ul>
               </li>
 
@@ -528,14 +528,7 @@
           Estrutura básica
           <a class="anchor-link" href="#estrutura" aria-label="Estrutura: HTML5"></a>
         </h4>
-
-        <figure class="figure">
-  <img src="dom.avif" class="figure-img img-fluid rounded" alt="...">
-  <figcaption class="figure-caption">Design criado pelo desenvolvedor.</figcaption>
-</figure>
-
-
-
+        <img src="dom.avif" class="img-fluid mx-auto d-block pb-4" alt="Imagem DOM HTML">
 
         <p>DOM em inglês Documento Object Model sendo o Modelo de Documento do Objeto, é a estrutura principal do
           documento HTML, composto inicialmente pelo <code>&lt;!doctype html&gt;</code> onde é contida as instruções de
@@ -571,7 +564,10 @@
        
         <br>
 
-        <h3 id="element">Elementos<a class="anchor-link" href="#element" aria-label="Elementos: HTML5"></a></h3>
+        <h3 id="elementos">
+          Elementos
+          <a class="anchor-link" href="#elementos" aria-label="Elementos: HTML5"></a>
+        </h3>
         <div class="table-responsive">
           <table class="table">
             <thead>
@@ -582,7 +578,6 @@
             </thead>
             <tbody>
               <tr>
-
                 <td>
                   <!-- HTML generated using hilite.me -->
                   <div
@@ -591,9 +586,7 @@
                   </div>
                 </td>
                 <td>Usado para posicionar o artigo em um documento.</td>
-
               </tr>
-
               <tr>
                 <td><!-- HTML generated using hilite.me -->
                   <div
@@ -603,14 +596,61 @@
                 </td>
                 <td>Separa uma área no DOM do documento na maioria das vezes usado para links.</td>
               </tr>
-
             </tbody>
           </table>
         </div>
 
+        <hr>
+
+        <h2 id="usage">Mode Code 1</h2>
+
+        <pre class="snippet"><code class="html">&lt;!-- Trigger --&gt;
+&lt;button class="btn" data-clipboard-text="Just because you can doesn't mean you should — clipboard.js"&gt;
+    Copy to clipboard
+&lt;/button&gt;</code></pre>
+
+        <hr>
+
+        <hr>
+
+        <h2 id="usage">Mode Code 2</h2>
+
+        <pre class="snippet"><code class="html">&lt;!-- Target --&gt;
+&lt;input id="foo" value="https://github.com/fabiodellpozzo"&gt;
+
+&lt;!-- Trigger --&gt;
+&lt;button class="btn" data-clipboard-target="#foo"&gt;
+    &lt;img src="assets/clippy.svg" alt="Copy to clipboard"&gt;
+&lt;/button&gt;</code></pre>
+
+
+
+        <hr>
+
+
+
+    
+
+        <h2 id="install">Mode Install</h2>
+        <pre class="snippet"><code class="js">npm install clipboard --save</code></pre>
+
+
+        <hr>
+
+ 
+
+   
+
+
+
+
 
     </main>
   </div>
+
+
+
+
 
 
 
@@ -634,28 +674,40 @@
           <h5>Footer Section</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="#">Link Footer</a></li>
-
+            <li class="mb-2"><a href="#">Link Footer</a></li>
+            <li class="mb-2"><a href="#">Link Footer</a></li>
+            <li class="mb-2"><a href="#">Link Footer</a></li>
+            <li class="mb-2"><a href="#">Link Footer</a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-2 mb-3">
           <h5>Footer Section</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="#">Link Footer</a></li>
-
+            <li class="mb-2"><a href="#">Link Footer</a></li>
+            <li class="mb-2"><a href="#">Link Footer</a></li>
+            <li class="mb-2"><a href="#">Link Footer</a></li>
+            <li class="mb-2"><a href="#">Link Footer</a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-2 mb-3">
           <h5>Footer Section</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="#" rel="noopener">Link Footer</a></li>
-
+            <li class="mb-2"><a href="#" rel="noopener">Link Footer</a></li>
+            <li class="mb-2"><a href="#" rel="noopener">Link Footer</a></li>
+            <li class="mb-2"><a href="#" rel="noopener">Link Footer</a></li>
+            <li class="mb-2"><a href="#" rel="noopener">Link Footer</a></li>
           </ul>
         </div>
         <div class="col-6 col-lg-2 mb-3">
           <h5>Footer Section</h5>
           <ul class="list-unstyled">
             <li class="mb-2"><a href="#" target="_blank" rel="noopener">Link Footer</a></li>
- 
+            <li class="mb-2"><a href="#" target="_blank" rel="noopener">Link Footer</a></li>
+            <li class="mb-2"><a href="#" target="_blank" rel="noopener">Link Footer</a></li>
+            <li class="mb-2"><a href="#" target="_blank" rel="noopener">Link Footer</a></li>
+            <li class="mb-2"><a href="#" target="_blank" rel="noopener">Link Footer</a></li>
           </ul>
         </div>
       </div>
