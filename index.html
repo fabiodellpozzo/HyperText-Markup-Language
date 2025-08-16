@@ -1,15 +1,10 @@
 <!doctype html>
 <html lang="pt-BR" data-bs-theme="auto">
-
 <head>
-
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-
   <title>HTML</title>
-
   <script src="color-modes.js"></script>
-
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="docs.css" rel="stylesheet">
   <link rel="stylesheet" href="primer.css">
@@ -504,8 +499,9 @@
 
               <li><a href="#intro">Introdução</a>
                 <ul>
-                  <li><a id="estrutura" href="#estrutura">Estrutura básica.</a></li>
                   <li><a id="element" href="#element">Elementos.</a></li>
+                  <li><a id="estrutura" href="#estrutura">Estrutura básica.</a></li>
+                  
                 </ul>
               </li>
 
@@ -524,54 +520,7 @@
           para compartilhamento, formalmente definida por Tim Bernes-Lee e Dan Connly, mantida pela <a
             href="https://www.w3.org/" target="_blank">W3C</a> sendo a 2ª versão da 6ª geração desta linguagem.</p>
 
-        <h4 id="estrutura">
-          Estrutura básica
-          <a class="anchor-link" href="#estrutura" aria-label="Estrutura: HTML5"></a>
-        </h4>
-
-        <figure class="figure">
-  <img src="dom.avif" class="figure-img img-fluid rounded" alt="...">
-  <figcaption class="figure-caption">Design criado pelo desenvolvedor.</figcaption>
-</figure>
-
-
-
-
-        <p>DOM em inglês Documento Object Model sendo o Modelo de Documento do Objeto, é a estrutura principal do
-          documento HTML, composto inicialmente pelo <code>&lt;!doctype html&gt;</code> onde é contida as instruções de
-          declaração do tipo do documento ou Document Type Declaration DTD. Onde os navegadores identificam a versão do
-          tipo do documeto no qual a página é escrita.</p>
-
-           <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-          <pre class="snippet"><code class="html"><pre style="margin: 0; line-height: 125%;"><span></span><span style="color: #9C6500">&lt;!doctype html&gt;</span>
-&lt;<span style="color: #008000; font-weight: bold">html</span> <span style="color: #687822">lang</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;pt-BR&quot;</span>&gt;
-  &lt;<span style="color: #008000; font-weight: bold">head</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">charset</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;utf-8&quot;</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">name</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;viewport&quot;</span> <span style="color: #687822">content</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;width=device-width, initial-scale=1&quot;</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">title</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">title</span>&gt;
-  &lt;/<span style="color: #008000; font-weight: bold">head</span>&gt;
-  &lt;<span style="color: #008000; font-weight: bold">body</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">h1</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">h1</span>&gt;
-  &lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;
-&lt;/<span style="color: #008000; font-weight: bold">html</span>&gt;
-</pre></code>
-        </div>
-
-
-        
-
-        <p>Em sua estrutura temos as tags principais de estrutura entre elas a tag
-          <code>&lt;<span style="color: #008000; font-weight: bold">head</span>&gt;Corpo do documento.&lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;</code>
-          contendo instruções de metadados, título, informações de dimensionamento, codificação de caracteres e links
-          para a formatação de estilo. No seu corpo do documento ou
-          <code>&lt;<span style="color: #008000; font-weight: bold">body</span>&gt;Corpo do documento.&lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;</code>
-          é apresentado seu conteúdo e diagramação da página através de elementos e atributos.
-        </p>
-
-       
-        <br>
-
-        <h3 id="element">Elementos<a class="anchor-link" href="#element" aria-label="Elementos: HTML5"></a></h3>
+            <h3 id="element">Elementos<a class="anchor-link" href="#element" aria-label="Elementos: HTML5"></a></h3>
         <div class="table-responsive">
           <table class="table">
             <thead>
@@ -607,6 +556,57 @@
             </tbody>
           </table>
         </div>
+
+        <h4 id="estrutura">
+          DOM - Estrutura básica 
+          <a class="anchor-link" href="#estrutura" aria-label="Estrutura: HTML5"></a>
+        </h4>
+
+<figure class="figure">
+  <img src="dom.avif" class="figure-img img-fluid rounded" alt="Imagem de representação báscia da estrutura do documento html.">
+  <figcaption class="figure-caption">Design criado pelo desenvolvedor.</figcaption>
+</figure>
+
+
+
+
+        <p>DOM em inglês Documento Object Model sendo o Modelo de Documento do Objeto, é a estrutura principal do
+          documento HTML, composto inicialmente pelo <code>&lt;!doctype html&gt;</code> onde é contida as instruções de
+          declaração do tipo do documento ou Document Type Declaration DTD. Onde os navegadores identificam a versão do
+          tipo do documeto no qual a página é escrita, possuem significado intrínseco, também conhecido como semântica</p>
+
+          <p>Uma página da web escrita considerando apenas navegadores para desktop</p>
+
+           <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+          <pre class="snippet"><code class="html"><pre style="margin: 0; line-height: 125%;"><span></span><span style="color: #9C6500">&lt;!doctype html&gt;</span>
+&lt;<span style="color: #008000; font-weight: bold">html</span> <span style="color: #687822">lang</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;pt-BR&quot;</span>&gt;
+  &lt;<span style="color: #008000; font-weight: bold">head</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">charset</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;utf-8&quot;</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">name</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;viewport&quot;</span> <span style="color: #687822">content</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;width=device-width, initial-scale=1&quot;</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">title</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">title</span>&gt;
+  &lt;/<span style="color: #008000; font-weight: bold">head</span>&gt;
+  &lt;<span style="color: #008000; font-weight: bold">body</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">h1</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">h1</span>&gt;
+  &lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;
+&lt;/<span style="color: #008000; font-weight: bold">html</span>&gt;
+</pre></code>
+        </div>
+
+
+        
+
+        <p>Em sua estrutura temos as tags principais de estrutura entre elas a tag
+          <code>&lt;<span style="color: #008000; font-weight: bold">head</span>&gt;Cabeçalho do documento&lt;/<span style="color: #008000; font-weight: bold">head</span>&gt;</code>
+          contendo instruções de metadados, título, informações de dimensionamento, codificação de caracteres e links
+          para a formatação de estilo. No seu corpo do documento ou
+          <code>&lt;<span style="color: #008000; font-weight: bold">body</span>&gt;Corpo do documento.&lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;</code>
+          é apresentado seu conteúdo e diagramação da página através de elementos e atributos.
+        </p>
+
+       
+     
+
+        
 
 
     </main>
