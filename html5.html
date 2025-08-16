@@ -1,6 +1,5 @@
 <!doctype html>
 <html lang="pt-BR" data-bs-theme="auto">
-
 <head>
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
@@ -12,25 +11,25 @@
   <link rel="stylesheet" href="github.css">
   <link rel="stylesheet" href="main.css">
   <style>
-    .preform {
+    .preform{
       background: #f8f8f8;
-      overflow: auto;
-      width: auto;
-      border: solid gray;
-      border-width: .1em .1em .1em .8em;
-      padding: .2em .6em;
+      overflow:auto;
+      width:auto;
+      border:solid gray;
+      border-width:.1em .1em .1em .8em;
+      padding:.2em .6em;
     }
 
-    .preformPre {
+    .preformPre{
       margin: 0;
       line-height: 125%;
     }
 
-    .preformPre:only-child,
-    span {
-      color: #008000;
-      font-weight: bold;
+    .preformPre:only-child, span{
+color: #008000;
+font-weight: bold;
     }
+ 
   </style>
 </head>
 
@@ -295,14 +294,11 @@
               </ul>
 
             </li>
-
             <li class="nav-item py-2 py-lg-1 col-12 col-lg-auto">
               <div class="vr d-none d-lg-flex h-100 mx-lg-2 text-white"></div>
               <hr class="d-lg-none my-2 text-white-50">
             </li>
-
             <li class="nav-item dropdown">
-
               <button class="btn btn-link nav-link py-2 px-0 px-lg-2 dropdown-toggle d-flex align-items-center"
                 id="bd-theme" type="button" aria-expanded="false" data-bs-toggle="dropdown" data-bs-display="static"
                 aria-label="Toggle theme (auto)">
@@ -311,9 +307,7 @@
                 </svg>
                 <span class="d-lg-none ms-2" id="bd-theme-text">Alternar tema</span>
               </button>
-
               <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="bd-theme-text">
-
                 <li>
                   <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="light"
                     aria-pressed="false">
@@ -327,7 +321,6 @@
                       <use href="#check2"></use>
                     </svg></button>
                 </li>
-
                 <li>
 
                   <button type="button" class="dropdown-item d-flex align-items-center" data-bs-theme-value="dark"
@@ -354,9 +347,7 @@
                     </svg>
                   </button>
                 </li>
-
               </ul>
-
             </li>
           </ul>
         </div>
@@ -364,253 +355,471 @@
     </nav>
   </header>
 
-  <main>
-    <div class="container pt-4">
-      <!-- Content here -->
 
 
-      <div class="row featurette">
-        <div class="col-md-7">
-          <h2 class="featurette-heading fw-normal lh-1">HyperText Markup Language <span
-              class="text-body-secondary">v5.2</span></h2>
-          <p class="lead">
-            O HTML 5.2 é uma versão atualizada da linguagem de marcação fundamental para a construção de páginas web.
-            Publicado como recomendação oficial pela W3C, refina e expande os recursos introduzidos no HTML5, com foco
-            em acessibilidade, segurança, interoperabilidade e melhor suporte para aplicações modernas.</p>
+  <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout ">
+    <aside class="bd-sidebar bg-body-tertiary">
+
+
+      <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
+        <div class="offcanvas-header border-bottom">
+          <h5 class="offcanvas-title" id="bdSidebarOffcanvasLabel">Ver Docs</h5>
+          <button type="button" class="btn-close" data-bs-dismiss="offcanvas" aria-label="Close"
+            data-bs-target="#bdSidebar"></button>
         </div>
-        <div class="col-md-5">
-          <picture>
-            <source srcset="assets/HTML5_logo_and_wordmark.svg" type="image/svg+xml">
-            <img src="assets/HTML5_logo_and_wordmark.svg" class="img-fluid img-thumbnail" alt="...">
-          </picture>
+
+
+        <div class="offcanvas-body">
+          <nav class="bd-links w-100" id="bd-docs-nav" aria-label="Docs navigation">
+            <ul class="bd-links-nav list-unstyled mb-0 pb-3 pb-md-2 pe-lg-2">
+              <li class="bd-links-group py-2">
+
+                <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                  <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true">
+                    <use xlink:href="#three-dots"></use>
+                  </svg>
+                  Introdução
+                </strong>
+
+                <ul class="list-unstyled fw-normal pb-2 small">
+                  <li><a href="#" class="bd-links-link d-inline-block rounded" aria-current="page">Offcanvas</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Offcanvas</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                </ul>
+              </li>
+
+              <li class="bd-links-group py-2">
+                <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                  <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true">
+                    <use xlink:href="#three-dots"></use>
+                  </svg>
+                  Title Aside
+                </strong>
+                <ul class="list-unstyled fw-normal pb-2 small">
+                  <li><a href="#" class="bd-links-link d-inline-block rounded" aria-current="page">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                </ul>
+              </li>
+
+              <li class="bd-links-group py-2">
+                <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                  <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true">
+                    <use xlink:href="#three-dots"></use>
+                  </svg>
+                  Title Aside
+                </strong>
+                <ul class="list-unstyled fw-normal pb-2 small">
+                  <li><a href="#" class="bd-links-link d-inline-block rounded" aria-current="page">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                </ul>
+              </li>
+
+              <li class="bd-links-group py-2">
+                <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                  <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true">
+                    <use xlink:href="#three-dots"></use>
+                  </svg>
+                  Title Aside
+                </strong>
+                <ul class="list-unstyled fw-normal pb-2 small">
+                  <li><a href="#" class="bd-links-link d-inline-block rounded" aria-current="page">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                </ul>
+              </li>
+
+              <li class="bd-links-group py-2">
+                <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                  <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true">
+                    <use xlink:href="#three-dots"></use>
+                  </svg>
+                  Title Aside
+                </strong>
+                <ul class="list-unstyled fw-normal pb-2 small">
+                  <li><a href="#" class="bd-links-link d-inline-block rounded" aria-current="page">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                </ul>
+              </li>
+              <li class="bd-links-group py-2">
+                <strong class="bd-links-heading d-flex w-100 align-items-center fw-semibold">
+                  <svg class="bi me-2" style="color: var(--bs-indigo);" aria-hidden="true">
+                    <use xlink:href="#three-dots"></use>
+                  </svg>
+                  Title Aside
+                </strong>
+                <ul class="list-unstyled fw-normal pb-2 small">
+                  <li><a href="#" class="bd-links-link d-inline-block rounded" aria-current="page">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                  <li><a href="#" class="bd-links-link d-inline-block rounded">Link</a></li>
+                </ul>
+              </li>
+              <li class="bd-links-span-all mt-1 mb-3 mx-4 border-top"></li>
+              <li class="bd-links-span-all">
+                <a href="#" class="bd-links-link d-inline-block rounded small ">
+                  Link
+                </a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+      </div>
+    </aside>
+
+
+    <main class="bd-main order-1">
+
+
+
+
+      <div class="bd-intro pt-2 ps-lg-2">
+
+        <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
+
+          <div class="mb-3 mb-md-0 d-flex text-nowrap">
+            <a class="btn btn-sm btn-bd-light rounded-0" href="https://fabiodellpozzo.com.br" title="Meu Website"
+              rel="noopener">
+              Desenvolvedor
+            </a>
+          </div>
+
+          <h1 class="bd-title mb-0" id="content">
+            HyperText Markup Language
+          </h1>
+
+        </div>
+
+        <p class="bd-lead">HTML5.2</p>
+
+      </div>
+
+      <div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
+
+        <button class="btn btn-link p-md-0 mb-2 mb-md-0 text-decoration-none bd-toc-toggle d-md-none" type="button"
+          data-bs-toggle="collapse" data-bs-target="#tocContents" aria-expanded="false" aria-controls="tocContents">
+          Nesta página
+          <svg class="bi d-md-none ms-2" aria-hidden="true">
+            <use xlink:href="#chevron-expand"></use>
+          </svg>
+        </button>
+
+        <strong class="d-none d-md-block h6 my-2 ms-3">Nesta página</strong>
+
+        <hr class="d-none d-md-block my-2 ms-3">
+        <div class="collapse bd-toc-collapse" id="tocContents">
+          <nav id="TableOfContents">
+            <ul>
+
+              <li><a href="#intro">Introdução</a>
+                <ul>
+                  <li><a id="element" href="#element">Elementos.</a></li>
+                  <li><a id="estrutura" href="#estrutura">Estrutura básica.</a></li>
+                  
+                </ul>
+              </li>
+
+           
+
+            </ul>
+          </nav>
         </div>
       </div>
 
+      <div class="bd-content ps-lg-2">
+
+        <h2 id="intro">Introdução<a class="anchor-link" href="#intro"></a></h2>
+
+        <p>Durante o início do advento da Internet a linguagem foi desenvolvida para facilitar as ligações de documentos
+          para compartilhamento, formalmente definida por 
+          <a href="https://www.w3.org/People/Berners-Lee/" target="_blank">Tim Bernes-Lee</a>
+
+          e <a href="https://www.w3.org/People/Connolly/" target="_blank">Dan Connolly</a>, mantida pela <a
+            href="https://www.w3.org/" target="_blank">W3C</a> sendo a 2ª versão da 6ª geração desta linguagem.</p>
+
+            <h3 id="element">Elementos<a class="anchor-link" href="#element" aria-label="Elementos: HTML5"></a></h3>
+
+            <p>A maioria dos elementos usados no corpo de documentos e aplicativos é categorizada como conteúdo de fluxo.</p>
+        <div class="table-responsive">
+          <table class="table">
+            <thead>
+              <tr>
+                <th>Elemento</th>
+                <th>Aplicação</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+
+        
+
+           
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;a</span>&gt; &lt;/<span>a</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  Se o elemento tiver um atributo, então ele representa um hiperlink (uma âncora de hipertexto) rotulado por seu conteúdo.ahref
+
+Se o elemento não tiver nenhum atributo, então o elemento representa um espaço reservado para onde um link poderia estar colocado, se fosse relevante, consistindo apenas no conteúdo do elemento.ahref
+                </td>
+
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>abbr</span>&gt; &lt;/<span>abbr</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa uma abreviação ou acrônimo, opcionalmente com sua expansão. O atributo title pode ser usado para fornecer uma expansão do atributo abreviação. O atributo, se especificado, deve conter uma expansão da abreviatura, e nada mais.
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;address</span>&gt; &lt;/<span>address</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa as informações de contato para seu ancestral mais próximo ou elemento. Se esse é o corpo , as informações de contato se aplicarão ao documento como um todo. O elemento não deve ser usado para representar endereços arbitrários (por exemplo, postal endereços), a menos que esses endereços sejam de fato as informações de contato relevantes.
+                </td>
+                
+              </tr>
 
 
-      <p class="lh-base pt-4">Com novos elementos semânticos, melhor suporte a acessibilidade, segurança aprimorada e
-        incentivo ao uso de práticas seguras, como o uso de HTTPS e políticas de conteúdo. Integração com APIs modernas:
-        como Web Components, Web Storage e Service Workers, facilitando o desenvolvimento de aplicações web progressivas
-        (PWAs)</p>
+
+              <tr>
+                <td>
+
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>area</span>&gt; &lt;/<span>area</span>&gt;</pre>
+                  </div>
+
+                </td>
+
+                <td>
+                  O elemento representa um hiperlink com algum texto e um área correspondente em um mapa de imagem ou uma área morta em um mapa de imagem.
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>article</span>&gt; &lt;/<span>article</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa um completo, ou autocontido, composição em um documento, página, aplicativo ou site e que é, em princípio, independente distribuível ou reutilizável, por exemplo, em distribuição. Pode ser uma postagem no fórum, uma revista ou artigo de jornal, uma entrada de blog, um comentário enviado pelo usuário, um widget ou gadget interativo ou qualquer outro item independente de conteúdo. O conteúdo de seção é o conteúdo que define o escopo e os elementos header e footer
+                </td>
+                
+              </tr>
 
 
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span >aside</span>&gt; &lt;/<span>aside</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa uma seção de uma página que consiste em conteúdo tangencialmente relacionado ao conteúdo ao redor do elemento e que poderia ser considerado separado desse conteúdo. Essas seções são frequentemente representadas como barras laterais na tipografia impressa. O conteúdo de seção é o conteúdo que define o escopo e os elementos header e footer,
+                </td>
+                
+              </tr>
 
 
-      <div class="row pt-4">
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>audio</span>&gt; &lt;/<span>audio</span>&gt;</pre>
+                  </div>
+                </td>
 
-        <div class="col-lg-6">
+                <td>
+                  Um elemento representa um fluxo de som ou áudio.
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>b</span>&gt; &lt;/<span>b</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa uma extensão de texto para a qual a atenção está sendo desenhado para fins utilitários sem transmitir qualquer importância extra e sem implicar uma voz ou humor alternativo, como palavras-chave no resumo de um documento, nomes de produtos em uma revisão, palavras acionáveis em software interativo orientado a texto ou um artigo lede.
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>bdi</span>&gt; &lt;/<span>bdi</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa uma extensão de texto que deve ser isolada seus arredores para fins de formatação de texto bidirecional.
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>bdo</span>&gt; &lt;/<span>bdo</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa a formatação explícita de direcionalidade de texto controle para seus filhos. Ele permite que os autores substituam o algoritmo bidirecional Unicode por especificando explicitamente uma substituição de direção. Os autores devem especificar o atributo neste elemento, com o valor para especificar uma substituição da esquerda para a direita e com o valor para especificar uma substituição da direita para a esquerda. O valor não deve ser especificado.
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>blockquote</span>&gt; &lt;/<span>blockquote</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa uma seção onde seja citada em outra fonte. O conteúdo dentro deve ser recebido de outra fonte, caso tenha o endereço pode ser acrescentado ao atributo. 
+                </td>
+                
+              </tr>
+
+              <tr>
+                <td>
+                  <div class="preform">
+                    <pre class="preformPre"><span></span>&lt;<span>br</span>&gt; &lt;/<span>br</span>&gt;</pre>
+                  </div>
+                </td>
+
+                <td>
+                  O elemento representa uma quebra de linha.
+                </td>
+                
+              </tr>
 
 
-          <picture class="bd-placeholder-img rounded-circle">
-            <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
-              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/hard-drive-regular-full.svg"
-              type="image/svg+xml">
-            <img src="assets/hard-drive-regular-full.svg" class="img-fluid img-thumbnail"
-              class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-              width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Web Storage</h2>
-          <p>Os dados podem ser armazenados no computador ou dispositivo móvel de um usuário, então os aplicativos da
-            web funcionam sem uma conexão com a Internet.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </tbody>
+          </table>
         </div>
 
+        <h4 id="estrutura">
+          DOM interface - Estrutura básica 
+          <a class="anchor-link" href="#estrutura" aria-label="Estrutura: HTML5"></a>
+        </h4>
 
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-6">
+<figure class="figure">
+  <img src="dom.avif" class="figure-img img-fluid rounded" alt="Imagem de representação báscia da estrutura do documento html.">
+  <figcaption class="figure-caption">Design criado pelo desenvolvedor.</figcaption>
+</figure>
 
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/font-solid-full.svg" type="image/svg+xml">
-          <img src="assets/font-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
+  <p>DOM em inglês Documento Object Model sendo o Modelo de Documento do Objeto, é a estrutura principal do
+          documento HTML, composto inicialmente pelo <code>&lt;!doctype html&gt;</code> onde é contida as instruções de
+          declaração do tipo do documento ou Document Type Declaration DTD. Onde os navegadores identificam a versão do
+          tipo do documeto no qual a página é escrita, possuem significado intrínseco, também conhecido como semântica</p>
 
-          <h2 class="fw-normal">Type</h2>
-          <p>As páginas da web podem ter um estilo mais chamativo com mais fontes, sombras, cores e outros efeitos.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
+          <p>Uma página da web escrita considerando apenas navegadores para desktop</p>
 
+           <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
+          <pre class="snippet"><code class="html"><pre style="margin: 0; line-height: 125%;"><span></span><span style="color: #9C6500">&lt;!doctype html&gt;</span>
+&lt;<span style="color: #008000; font-weight: bold">html</span> <span style="color: #687822">lang</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;pt-BR&quot;</span>&gt;
+  &lt;<span style="color: #008000; font-weight: bold">head</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">charset</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;utf-8&quot;</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">name</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;viewport&quot;</span> <span style="color: #687822">content</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;width=device-width, initial-scale=1&quot;</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">title</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">title</span>&gt;
+  &lt;/<span style="color: #008000; font-weight: bold">head</span>&gt;
+  &lt;<span style="color: #008000; font-weight: bold">body</span>&gt;
+    &lt;<span style="color: #008000; font-weight: bold">h1</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">h1</span>&gt;
+  &lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;
+&lt;/<span style="color: #008000; font-weight: bold">html</span>&gt;</pre></code></div>
 
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/arrow-pointer-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/arrow-pointer-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Motion</h2>
-          <p>Objetos se movem nas páginas da Web e reagem aos movimentos de um cursor.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/gamepad-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/gamepad-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Games</h2>
-          <p>Jogos interativos podem ser executados apenas com um navegador da Web, sem a necessidade de instalar outros softwares ou plug-ins.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/volume-high-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/volume-high-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Audio</h2>
-          <p>O áudio é reproduzido sem uso de plug-ins.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/cube-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/cube-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">3D</h2>
-          <p>Uma tecnologia chamada WebGL pode criar efeitos 3D interativos usando o processador gráfico de um computador.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/video-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/video-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Video</h2>
-          <p>O vídeo pode ser incorporado em uma página da Web sem uso de plug-in.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-
-
-      </div>
-    </div>
-
-  </main>
-
-
-  <!-- /.row -->
-
-
-
-
-
-
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-  <div class="container marketing"> <!-- Three columns of text below the carousel -->
-
-
-
-    <!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-    <hr class="featurette-divider">
-
-
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">First featurette heading. <span class="text-body-secondary">It’ll
-            blow your mind.</span></h2>
-        <p class="lead">Some great placeholder content for the first featurette here. Imagine some exciting
-          prose here.</p>
-      </div>
-      <div class="col-md-5"> <svg aria-label="Placeholder: 500x500"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
-          preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-        </svg> </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7 order-md-2">
-        <h2 class="featurette-heading fw-normal lh-1">Oh yeah, it’s that good. <span class="text-body-secondary">See for
-            yourself.</span></h2>
-        <p class="lead">Another featurette? Of course. More placeholder content here to give you an idea of
-          how this layout would work with some actual real-world content in place.</p>
-      </div>
-      <div class="col-md-5 order-md-1"> <svg aria-label="Placeholder: 500x500"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
-          preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-        </svg> </div>
-    </div>
-    <hr class="featurette-divider">
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">And lastly, this one. <span
-            class="text-body-secondary">Checkmate.</span></h2>
-        <p class="lead">And yes, this is the last block of representative placeholder content. Again, not
-          really intended to be actually read, simply here to give you a better view of what this would
-          look like with some actual content. Your content.</p>
-      </div>
-      <div class="col-md-5"> <svg aria-label="Placeholder: 500x500"
-          class="bd-placeholder-img bd-placeholder-img-lg featurette-image img-fluid mx-auto" height="500"
-          preserveAspectRatio="xMidYMid slice" role="img" width="500" xmlns="http://www.w3.org/2000/svg">
-          <title>Placeholder</title>
-          <rect width="100%" height="100%" fill="var(--bs-secondary-bg)"></rect><text x="50%" y="50%"
-            fill="var(--bs-secondary-color)" dy=".3em">500x500</text>
-        </svg> </div>
-    </div>
-    <hr class="featurette-divider"> <!-- /END THE FEATURETTES -->
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <p class="pt-2">Em sua estrutura temos as tags principais entre elas a tag
+          <code>&lt;<span style="color: #008000; font-weight: bold">head</span>&gt;Cabeçalho do documento&lt;/<span style="color: #008000; font-weight: bold">head</span>&gt;</code>
+          contendo instruções de metadados, título, informações de dimensionamento, codificação de caracteres e links
+          para a formatação de estilo. No seu corpo do documento ou
+          <code>&lt;<span style="color: #008000; font-weight: bold">body</span>&gt;Corpo do documento.&lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;</code>
+          é apresentado seu conteúdo e diagramação da página através de elementos e atributos.
+        </p>
 
     </main>
   </div>
 
 
 
+  <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
+    <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
+      <div class="row">
+        <div class="col-lg-3 mb-3">
+          <a class="d-inline-flex align-items-center mb-2 text-body-emphasis text-decoration-none" href="/"
+            aria-label="Bootstrap">
+            <svg class="bi me-2" style="color: var(--bs-indigo);" width="40" height="32" class="d-block me-2"
+              viewBox="0 0 118 94" role="img" aria-hidden="true">
+              <use xlink:href="#three-dots"></use>
+            </svg>
+            <span class="fs-5">Docs</span>
+          </a>
+          <ul class="list-unstyled small">
+            <li class="mb-2">Texto</a>.</li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 offset-lg-1 mb-3">
+          <h5>Footer Section</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Link Footer</a></li>
 
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Footer Section</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#">Link Footer</a></li>
+
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Footer Section</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" rel="noopener">Link Footer</a></li>
+
+          </ul>
+        </div>
+        <div class="col-6 col-lg-2 mb-3">
+          <h5>Footer Section</h5>
+          <ul class="list-unstyled">
+            <li class="mb-2"><a href="#" target="_blank" rel="noopener">Link Footer</a></li>
+ 
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
 
   <script src="highlight.pack.min.js"></script>
   <script src="clipboard.min.js"></script>
