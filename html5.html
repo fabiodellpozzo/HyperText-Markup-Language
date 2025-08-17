@@ -740,6 +740,53 @@
           é apresentado seu conteúdo e diagramação da página através de elementos e atributos.
         </p>
 
+        <h2>Código DOM</h2>
+        <pre class="snippet"><code>
+<pre style="font-family:monospace;color: rgb(220, 220, 220); background-color: rgb(30, 30, 30); font-weight: 400; "><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;!DOCTYPE <span style="color: rgb(86, 156, 214); font-weight: 400;">html</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">html</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">head</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">meta</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">charset</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"utf-8"</span> /&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">title</span>&gt;</span>DOM<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">title</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">link</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">rel</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"stylesheet"</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">href</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">".css"</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">head</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">body</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">header</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h1</span>&gt;</span>header<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h1</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">header</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">nav</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">ul</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">href</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"#"</span>&gt;</span>Link<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span>&gt;</span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">href</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"#"</span>&gt;</span>Link<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span>&gt;</span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">ul</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">nav</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">section</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">article</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h2</span>&gt;</span>Titulo<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h2</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>Subtitulo<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">ul</span>&gt;</span>
+                    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+                    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+                    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">ul</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>Subtitulo<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">ol</span>&gt;</span>
+                    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+                    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+                    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+                <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">ol</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">article</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">section</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">aside</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>Algum conteudo relacionado.<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">aside</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">footer</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>footer<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">footer</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">body</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">html</span>&gt;</span></pre>
+
+        </code></pre>
+
     </main>
   </div>
 
