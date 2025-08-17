@@ -8,9 +8,10 @@
   <script src="color-modes.js"></script>
   <link href="bootstrap.min.css" rel="stylesheet">
   <link href="docs.css" rel="stylesheet">
-  <link rel="stylesheet" href="primer.css">
-  <link rel="stylesheet" href="github.css">
-  <link rel="stylesheet" href="main.css">
+
+  <link href="css/vs2015.css" rel="stylesheet">
+  <link href="css/main.css" rel="stylesheet">
+  
   <style>
    .preform{
       background: #1F1F1F;
@@ -621,11 +622,35 @@ font-family: Consolas, 'Courier New', monospace;
 
 
 
-  <script src="highlight.pack.min.js"></script>
-  <script src="clipboard.min.js"></script>
-  <script src="demos.js"></script>
-  <script src="snippets.js"></script>
-  <script src="tooltips.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/snippets.js"></script>
+    <script src="js/tooltips.js"></script>
+
+    <script>hljs.highlightAll();</script>
+
+    <script>
+      var clipboardDemos = new ClipboardJS('[data-clipboard-demo]');
+
+        clipboardDemos.on('success', function(e) {
+            e.clearSelection();
+
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+
+            showTooltip(e.trigger, 'Copied!');
+        });
+
+        clipboardDemos.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+
+            showTooltip(e.trigger, fallbackMessage(e.action));
+        });
+    </script>
+
+
+
   <script src="bootstrap.bundle.min.js"></script>
   <script src="docs.min.js"></script>
 

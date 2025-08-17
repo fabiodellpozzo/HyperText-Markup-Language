@@ -1,7 +1,7 @@
 var snippets = document.querySelectorAll('.snippet');
 
 [].forEach.call(snippets, function(snippet) {
-    snippet.firstChild.insertAdjacentHTML('beforebegin', '<button class="btn" data-clipboard-snippet><img class="clippy" width="13" src="clippy.svg" alt="Copy"></button>');
+    snippet.firstChild.insertAdjacentHTML('beforebegin', '<button class="btn" data-clipboard-snippet><img class="clippy" width="16" src="assets/clippy.svg" alt="Copy to clipboard"></button>');
 });
 
 var clipboardSnippets = new ClipboardJS('[data-clipboard-snippet]', {

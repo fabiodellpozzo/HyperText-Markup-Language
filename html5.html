@@ -4,35 +4,13 @@
   <meta charset="utf-8">
   <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>HTML</title>
-  <script src="color-modes.js"></script>
-  <link href="bootstrap.min.css" rel="stylesheet">
-  <link href="docs.css" rel="stylesheet">
-  <link rel="stylesheet" href="primer.css">
-  <link rel="stylesheet" href="github.css">
-  <link rel="stylesheet" href="main.css">
+    <script src="js/color-modes.js"></script>
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link href="css/main.css" rel="stylesheet">
+    <link href="css/docs.css" rel="stylesheet">
   <style>
 
 
-    .preform{
-      background: #1F1F1F;
-      overflow:auto;
-      width:auto;
-      border:solid #181818;
-      border-width:.1em .1em .1em .8em;
-      padding:.2em .6em;
-    }
-
-    .preformPre{
-      margin: 0;
-      line-height: 125%;
-    }
-
-    .preformPre:only-child, span{
-color: #439CD6;
-font-weight: bold;
-font-size: 16px;
-font-family: Consolas, 'Courier New', monospace;
-    }
  
   </style>
 </head>
@@ -46,18 +24,13 @@ font-family: Consolas, 'Courier New', monospace;
     </div>
   </div>
 
+<!-- svg stage -->
   <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
 
-
-
-
-
-<symbol id="bi-code-slash" viewBox="0 0 16 16">
-<path 
-d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-</symbol>
-
-
+    <symbol id="bi-code-slash" viewBox="0 0 16 16">
+      <path 
+      d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+    </symbol>
 
     <symbol id="arrow-right" viewBox="0 0 16 16">
       <path
@@ -190,7 +163,9 @@ d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.
     </symbol>
 
   </svg>
-
+<!-- end svg stage -->
+ 
+<!-- header -->
   <header class="navbar navbar-expand-lg  bg-body-tertiary sticky-top" data-bs-theme="dark">
     <nav class="container-xxl bd-gutter flex-wrap flex-lg-nowrap bg-body-tertiary" aria-label="Main navigation">
       <div class="bd-navbar-toggle">
@@ -372,12 +347,12 @@ d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.
       </div>
     </nav>
   </header>
+<!-- end header -->
 
+  <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout">
 
-
-  <div class="container-xxl bd-gutter mt-3 my-md-4 bd-layout ">
+<!-- aside -->
     <aside class="bd-sidebar bg-body-tertiary">
-
 
       <div class="offcanvas-lg offcanvas-start" tabindex="-1" id="bdSidebar" aria-labelledby="bdSidebarOffcanvasLabel">
         <div class="offcanvas-header border-bottom">
@@ -491,33 +466,27 @@ d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.
         </div>
       </div>
     </aside>
+<!-- end aside -->
 
 
     <main class="bd-main order-1">
 
-
-
-
+<!-- intro -->
       <div class="bd-intro pt-2 ps-lg-2">
-
         <div class="d-md-flex flex-md-row-reverse align-items-center justify-content-between">
-
           <div class="mb-3 mb-md-0 d-flex text-nowrap">
             <a class="btn btn-sm btn-bd-light rounded-0" href="https://fabiodellpozzo.com.br" title="Meu Website"
               rel="noopener">
               Desenvolvedor
             </a>
           </div>
-
           <h1 class="bd-title mb-0" id="content">
             HyperText Markup Language
           </h1>
-
         </div>
-
         <p class="bd-lead">HTML5.2</p>
-
       </div>
+<!-- end intro -->
 
       <div class="bd-toc mt-3 mb-5 my-lg-0 mb-lg-5 px-sm-1 text-body-secondary">
 
@@ -532,23 +501,22 @@ d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.
         <strong class="d-none d-md-block h6 my-2 ms-3">Nesta página</strong>
 
         <hr class="d-none d-md-block my-2 ms-3">
+<!-- right menu-->
         <div class="collapse bd-toc-collapse" id="tocContents">
           <nav id="TableOfContents">
             <ul>
-
-              <li><a href="#intro">Introdução</a>
+              <li>
+                <a href="#intro">Introdução</a>
                 <ul>
                   <li><a id="element" href="#element">Elementos.</a></li>
                   <li><a id="estrutura" href="#estrutura">Estrutura básica.</a></li>
-                  
                 </ul>
               </li>
-
-           
-
             </ul>
           </nav>
         </div>
+<!-- end right menu-->
+
       </div>
 
       <div class="bd-content ps-lg-2">
@@ -565,33 +533,30 @@ d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.
             <h3 id="element">Elementos<a class="anchor-link" href="#element" aria-label="Elementos: HTML5"></a></h3>
 
             <p>A maioria dos elementos usados no corpo de documentos e aplicativos é categorizada como conteúdo de fluxo.</p>
+
         <div class="table-responsive">
+
           <table class="table">
+
             <thead>
               <tr>
                 <th>Elemento</th>
                 <th>Aplicação</th>
               </tr>
             </thead>
+
             <tbody>
-              <tr>
-
-        
-
-           
+             
               <tr>
                 <td>
                   <div class="preform">
                     <pre class="preformPre"><span></span>&lt;a</span>&gt; &lt;/<span>a</span>&gt;</pre>
                   </div>
                 </td>
-
                 <td>
-                  Se o elemento tiver um atributo, então ele representa um hiperlink (uma âncora de hipertexto) rotulado por seu conteúdo.ahref
-
-Se o elemento não tiver nenhum atributo, então o elemento representa um espaço reservado para onde um link poderia estar colocado, se fosse relevante, consistindo apenas no conteúdo do elemento.ahref
+                  Se o elemento tiver um atributo, então ele representa um hiperlink (uma âncora de hipertexto) rotulado por seu conteúdo 'a href'.
+                  Se o elemento não tiver nenhum atributo, então o elemento representa um espaço reservado para onde um link poderia estar colocado, se fosse relevante, consistindo apenas no conteúdo do elemento.ahref
                 </td>
-
               </tr>
 
               <tr>
@@ -600,7 +565,6 @@ Se o elemento não tiver nenhum atributo, então o elemento representa um espaç
                     <pre class="preformPre"><span></span>&lt;<span>abbr</span>&gt; &lt;/<span>abbr</span>&gt;</pre>
                   </div>
                 </td>
-
                 <td>
                   O elemento representa uma abreviação ou acrônimo, opcionalmente com sua expansão. O atributo title pode ser usado para fornecer uma expansão do atributo abreviação. O atributo, se especificado, deve conter uma expansão da abreviatura, e nada mais.
                 </td>
@@ -613,28 +577,20 @@ Se o elemento não tiver nenhum atributo, então o elemento representa um espaç
                     <pre class="preformPre"><span></span>&lt;address</span>&gt; &lt;/<span>address</span>&gt;</pre>
                   </div>
                 </td>
-
                 <td>
                   O elemento representa as informações de contato para seu ancestral mais próximo ou elemento. Se esse é o corpo , as informações de contato se aplicarão ao documento como um todo. O elemento não deve ser usado para representar endereços arbitrários (por exemplo, postal endereços), a menos que esses endereços sejam de fato as informações de contato relevantes.
                 </td>
-                
               </tr>
-
-
 
               <tr>
                 <td>
-
                   <div class="preform">
                     <pre class="preformPre"><span></span>&lt;<span>area</span>&gt; &lt;/<span>area</span>&gt;</pre>
                   </div>
-
                 </td>
-
                 <td>
                   O elemento representa um hiperlink com algum texto e um área correspondente em um mapa de imagem ou uma área morta em um mapa de imagem.
                 </td>
-                
               </tr>
 
               <tr>
@@ -765,18 +721,17 @@ Se o elemento não tiver nenhum atributo, então o elemento representa um espaç
 
           <p>Uma página da web escrita considerando apenas navegadores para desktop</p>
 
-           <div style="background: #f8f8f8; overflow:auto;width:auto;border:solid gray;border-width:.1em .1em .1em .8em;padding:.2em .6em;">
-          <pre class="snippet"><code class="html"><pre style="margin: 0; line-height: 125%;"><span></span><span style="color: #9C6500">&lt;!doctype html&gt;</span>
-&lt;<span style="color: #008000; font-weight: bold">html</span> <span style="color: #687822">lang</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;pt-BR&quot;</span>&gt;
-  &lt;<span style="color: #008000; font-weight: bold">head</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">charset</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;utf-8&quot;</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">meta</span> <span style="color: #687822">name</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;viewport&quot;</span> <span style="color: #687822">content</span><span style="color: #666">=</span><span style="color: #BA2121">&quot;width=device-width, initial-scale=1&quot;</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">title</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">title</span>&gt;
-  &lt;/<span style="color: #008000; font-weight: bold">head</span>&gt;
-  &lt;<span style="color: #008000; font-weight: bold">body</span>&gt;
-    &lt;<span style="color: #008000; font-weight: bold">h1</span>&gt;Estrutura básica&lt;/<span style="color: #008000; font-weight: bold">h1</span>&gt;
-  &lt;/<span style="color: #008000; font-weight: bold">body</span>&gt;
-&lt;/<span style="color: #008000; font-weight: bold">html</span>&gt;</pre></code></div>
+ <pre class="snippet"><code><pre style="font-family:monospace;color: rgb(220, 220, 220); background-color: rgb(30, 30, 30); font-weight: 400; "><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;!doctype <span style="color: rgb(86, 156, 214); font-weight: 400;">html</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">html</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">lang</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"en"</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">head</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">meta</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">charset</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"utf-8"</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">meta</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">name</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"viewport"</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">content</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"width=device-width, initial-scale=1"</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">title</span>&gt;</span>Bootstrap demo<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">title</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">head</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">body</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h1</span>&gt;</span>Hello, world!<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h1</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">body</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">html</span>&gt;</span></pre></code></pre>
 
         <p class="pt-2">Em sua estrutura temos as tags principais entre elas a tag
           <code>&lt;<span style="color: #008000; font-weight: bold">head</span>&gt;Cabeçalho do documento&lt;/<span style="color: #008000; font-weight: bold">head</span>&gt;</code>
@@ -788,8 +743,6 @@ Se o elemento não tiver nenhum atributo, então o elemento representa um espaç
 
     </main>
   </div>
-
-
 
   <footer class="bd-footer py-4 py-md-5 mt-5 bg-body-tertiary">
     <div class="container py-4 py-md-5 px-4 px-md-3 text-body-secondary">
@@ -838,16 +791,33 @@ Se o elemento não tiver nenhum atributo, então o elemento representa um espaç
       </div>
     </div>
   </footer>
+    <script src="js/docs.min.js"></script>
+    <script src="js/clipboard.js"></script>
+    <script src="js/snippets.js"></script>
+    <script src="js/tooltips.js"></script>
+    <script>hljs.highlightAll();</script>
 
-  <script src="highlight.pack.min.js"></script>
-  <script src="clipboard.min.js"></script>
-  <script src="demos.js"></script>
-  <script src="snippets.js"></script>
-  <script src="tooltips.js"></script>
-  <script src="bootstrap.bundle.min.js"></script>
-  <script src="docs.min.js"></script>
+<script>
+      var clipboardDemos = new ClipboardJS('[data-clipboard-demo]');
 
+        clipboardDemos.on('success', function(e) {
+            e.clearSelection();
+
+            console.info('Action:', e.action);
+            console.info('Text:', e.text);
+            console.info('Trigger:', e.trigger);
+
+            showTooltip(e.trigger, 'Copied!');
+        });
+
+        clipboardDemos.on('error', function(e) {
+            console.error('Action:', e.action);
+            console.error('Trigger:', e.trigger);
+
+            showTooltip(e.trigger, fallbackMessage(e.action));
+        });
+
+</script>
 
 </body>
-
 </html>
