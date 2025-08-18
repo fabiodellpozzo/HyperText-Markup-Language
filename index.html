@@ -11,27 +11,28 @@
 
   <link href="css/vs2015.css" rel="stylesheet">
   <link href="css/main.css" rel="stylesheet">
-  
+
   <style>
-   .preform{
+    .preform {
       background: #1F1F1F;
-      overflow:auto;
-      width:auto;
-      border:solid #181818;
-      border-width:.1em .1em .1em .8em;
-      padding:.2em .6em;
+      overflow: auto;
+      width: auto;
+      border: solid #181818;
+      border-width: .1em .1em .1em .8em;
+      padding: .2em .6em;
     }
 
-    .preformPre{
+    .preformPre {
       margin: 0;
       line-height: 125%;
     }
 
-    .preformPre:only-child, span{
-color: #439CD6;
-font-weight: bold;
-font-size: 16px;
-font-family: Consolas, 'Courier New', monospace;
+    .preformPre:only-child,
+    span {
+      color: #439CD6;
+      font-weight: bold;
+      font-size: 16px;
+      font-family: Consolas, 'Courier New', monospace;
     }
   </style>
 </head>
@@ -45,63 +46,63 @@ font-family: Consolas, 'Courier New', monospace;
     </div>
   </div>
 
-<svg xmlns="http://www.w3.org/2000/svg" class="d-none">
+  <svg xmlns="http://www.w3.org/2000/svg" class="d-none">
 
-  <symbol id="bi-code-slash" viewBox="0 0 16 16">
-    <path 
-    d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
-  </symbol>
+    <symbol id="bi-code-slash" viewBox="0 0 16 16">
+      <path
+        d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0" />
+    </symbol>
 
-  <symbol id="arrow-right" viewBox="0 0 16 16">
-    <path fill-rule="evenodd"
-    d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
-  </symbol>
+    <symbol id="arrow-right" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M1 8a.5.5 0 0 1 .5-.5h11.793l-3.147-3.146a.5.5 0 0 1 .708-.708l4 4a.5.5 0 0 1 0 .708l-4 4a.5.5 0 0 1-.708-.708L13.293 8.5H1.5A.5.5 0 0 1 1 8z" />
+    </symbol>
 
-  <symbol id="book-half" viewBox="0 0 16 16">
-    <path
-    d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
-  </symbol>
+    <symbol id="book-half" viewBox="0 0 16 16">
+      <path
+        d="M8.5 2.687c.654-.689 1.782-.886 3.112-.752 1.234.124 2.503.523 3.388.893v9.923c-.918-.35-2.107-.692-3.287-.81-1.094-.111-2.278-.039-3.213.492V2.687zM8 1.783C7.015.936 5.587.81 4.287.94c-1.514.153-3.042.672-3.994 1.105A.5.5 0 0 0 0 2.5v11a.5.5 0 0 0 .707.455c.882-.4 2.303-.881 3.68-1.02 1.409-.142 2.59.087 3.223.877a.5.5 0 0 0 .78 0c.633-.79 1.814-1.019 3.222-.877 1.378.139 2.8.62 3.681 1.02A.5.5 0 0 0 16 13.5v-11a.5.5 0 0 0-.293-.455c-.952-.433-2.48-.952-3.994-1.105C10.413.809 8.985.936 8 1.783z" />
+    </symbol>
 
-  <symbol id="box-seam" viewBox="0 0 16 16">
-    <path
-    d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
-  </symbol>
+    <symbol id="box-seam" viewBox="0 0 16 16">
+      <path
+        d="M8.186 1.113a.5.5 0 0 0-.372 0L1.846 3.5l2.404.961L10.404 2l-2.218-.887zm3.564 1.426L5.596 5 8 5.961 14.154 3.5l-2.404-.961zm3.25 1.7-6.5 2.6v7.922l6.5-2.6V4.24zM7.5 14.762V6.838L1 4.239v7.923l6.5 2.6zM7.443.184a1.5 1.5 0 0 1 1.114 0l7.129 2.852A.5.5 0 0 1 16 3.5v8.662a1 1 0 0 1-.629.928l-7.185 2.874a.5.5 0 0 1-.372 0L.63 13.09a1 1 0 0 1-.63-.928V3.5a.5.5 0 0 1 .314-.464L7.443.184z" />
+    </symbol>
 
-  <symbol id="braces" viewBox="0 0 16 16">
-    <path
-    d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z" />
-  </symbol>
+    <symbol id="braces" viewBox="0 0 16 16">
+      <path
+        d="M2.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C3.25 2 2.49 2.759 2.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6zM13.886 7.9v.163c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456V7.332c-1.114 0-1.49-.362-1.49-1.456V4.352C13.51 2.759 12.75 2 11.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6z" />
+    </symbol>
 
-  <symbol id="braces-asterisk" viewBox="0 0 16 16">
-    <path fill-rule="evenodd"
-    d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z" />
-  </symbol>
+    <symbol id="braces-asterisk" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M1.114 8.063V7.9c1.005-.102 1.497-.615 1.497-1.6V4.503c0-1.094.39-1.538 1.354-1.538h.273V2h-.376C2.25 2 1.49 2.759 1.49 4.352v1.524c0 1.094-.376 1.456-1.49 1.456v1.299c1.114 0 1.49.362 1.49 1.456v1.524c0 1.593.759 2.352 2.372 2.352h.376v-.964h-.273c-.964 0-1.354-.444-1.354-1.538V9.663c0-.984-.492-1.497-1.497-1.6ZM14.886 7.9v.164c-1.005.103-1.497.616-1.497 1.6v1.798c0 1.094-.39 1.538-1.354 1.538h-.273v.964h.376c1.613 0 2.372-.759 2.372-2.352v-1.524c0-1.094.376-1.456 1.49-1.456v-1.3c-1.114 0-1.49-.362-1.49-1.456V4.352C14.51 2.759 13.75 2 12.138 2h-.376v.964h.273c.964 0 1.354.444 1.354 1.538V6.3c0 .984.492 1.497 1.497 1.6ZM7.5 11.5V9.207l-1.621 1.621-.707-.707L6.792 8.5H4.5v-1h2.293L5.172 5.879l.707-.707L7.5 6.792V4.5h1v2.293l1.621-1.621.707.707L9.208 7.5H11.5v1H9.207l1.621 1.621-.707.707L8.5 9.208V11.5h-1Z" />
+    </symbol>
 
-  <symbol id="check2" viewBox="0 0 16 16">
-    <path
-    d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
-  </symbol>
+    <symbol id="check2" viewBox="0 0 16 16">
+      <path
+        d="M13.854 3.646a.5.5 0 0 1 0 .708l-7 7a.5.5 0 0 1-.708 0l-3.5-3.5a.5.5 0 1 1 .708-.708L6.5 10.293l6.646-6.647a.5.5 0 0 1 .708 0z" />
+    </symbol>
 
-  <symbol id="chevron-expand" viewBox="0 0 16 16">
-    <path fill-rule="evenodd"
-    d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z" />
-  </symbol>
+    <symbol id="chevron-expand" viewBox="0 0 16 16">
+      <path fill-rule="evenodd"
+        d="M3.646 9.146a.5.5 0 0 1 .708 0L8 12.793l3.646-3.647a.5.5 0 0 1 .708.708l-4 4a.5.5 0 0 1-.708 0l-4-4a.5.5 0 0 1 0-.708zm0-2.292a.5.5 0 0 0 .708 0L8 3.207l3.646 3.647a.5.5 0 0 0 .708-.708l-4-4a.5.5 0 0 0-.708 0l-4 4a.5.5 0 0 0 0 .708z" />
+    </symbol>
 
-  <symbol id="circle-half" viewBox="0 0 16 16">
-    <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
-  </symbol>
+    <symbol id="circle-half" viewBox="0 0 16 16">
+      <path d="M8 15A7 7 0 1 0 8 1v14zm0 1A8 8 0 1 1 8 0a8 8 0 0 1 0 16z" />
+    </symbol>
 
-  <symbol id="clipboard" viewBox="0 0 16 16">
-    <path
-      d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
-    <path
-    d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
-  </symbol>
+    <symbol id="clipboard" viewBox="0 0 16 16">
+      <path
+        d="M4 1.5H3a2 2 0 0 0-2 2V14a2 2 0 0 0 2 2h10a2 2 0 0 0 2-2V3.5a2 2 0 0 0-2-2h-1v1h1a1 1 0 0 1 1 1V14a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V3.5a1 1 0 0 1 1-1h1v-1z" />
+      <path
+        d="M9.5 1a.5.5 0 0 1 .5.5v1a.5.5 0 0 1-.5.5h-3a.5.5 0 0 1-.5-.5v-1a.5.5 0 0 1 .5-.5h3zm-3-1A1.5 1.5 0 0 0 5 1.5v1A1.5 1.5 0 0 0 6.5 4h3A1.5 1.5 0 0 0 11 2.5v-1A1.5 1.5 0 0 0 9.5 0h-3z" />
+    </symbol>
 
-  <symbol id="code" viewBox="0 0 16 16">
-    <path
-    d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
-  </symbol>
+    <symbol id="code" viewBox="0 0 16 16">
+      <path
+        d="M5.854 4.854a.5.5 0 1 0-.708-.708l-3.5 3.5a.5.5 0 0 0 0 .708l3.5 3.5a.5.5 0 0 0 .708-.708L2.707 8l3.147-3.146zm4.292 0a.5.5 0 0 1 .708-.708l3.5 3.5a.5.5 0 0 1 0 .708l-3.5 3.5a.5.5 0 0 1-.708-.708L13.293 8l-3.147-3.146z" />
+    </symbol>
 
     <symbol id="file-earmark-richtext" viewBox="0 0 16 16">
       <path
@@ -227,15 +228,7 @@ font-family: Consolas, 'Courier New', monospace;
             <li class="nav-item col-6 col-lg-auto">
               <a class="nav-link py-2 px-0 px-lg-2" href="#">Link Nav</a>
             </li>
-            <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#" rel="noopener">Link Nav</a>
-            </li>
-            <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#">Link Nav</a>
-            </li>
-            <li class="nav-item col-6 col-lg-auto">
-              <a class="nav-link py-2 px-0 px-lg-2" href="#">Link Nav</a>
-            </li>
+     
           </ul>
           <hr class="d-lg-none text-white-50">
           <ul class="navbar-nav flex-row flex-wrap ms-md-auto">
@@ -376,10 +369,10 @@ font-family: Consolas, 'Courier New', monospace;
       <!-- Content here -->
 
 
-      <div class="row featurette">
+      <div class="row featurette py-4">
         <div class="col-md-7">
           <h2 class="featurette-heading fw-normal lh-1">HyperText Markup Language <span
-              class="text-body-secondary">v5.2</span></h2>
+              class="text-body-secondary">v5.3</span></h2>
           <p class="lead">
             O HTML 5.2 é uma versão atualizada da linguagem de marcação fundamental para a construção de páginas web.
             Publicado como recomendação oficial pela W3C, refina e expande os recursos introduzidos no HTML5, com foco
@@ -388,171 +381,174 @@ font-family: Consolas, 'Courier New', monospace;
         <div class="col-md-5">
           <picture>
             <source srcset="assets/HTML5_logo_and_wordmark.svg" type="image/svg+xml">
-            <img src="assets/HTML5_logo_and_wordmark.svg" class="img-fluid img-thumbnail" alt="...">
+            <img src="assets/HTML5_logo_and_wordmark.svg" class="img-fluid img-thumbnail border border-0" alt="...">
           </picture>
         </div>
       </div>
 
+      <!-- START THE FEATURETTES -->
+     
+      <hr class="featurette-divider">
+      <div class="row featurette">
+        <div class="col-md-7 order-md-2">
 
 
-      <p class="lh-base pt-4">Com novos elementos semânticos, melhor suporte a acessibilidade, segurança aprimorada e
-        incentivo ao uso de práticas seguras, como o uso de HTTPS e políticas de conteúdo. Integração com APIs modernas:
-        como Web Components, Web Storage e Service Workers, facilitando o desenvolvimento de aplicações web progressivas
-        (PWAs)</p>
+          <h2 class="featurette-heading fw-normal lh-1">
+            Documentação de Estudos
+            <span class="text-body-secondary">HTML5.3</span>
+          </h2>
+
+          <p class="lead">Estou atualmente estudando a versão 5.3 do HTML, 
+uma evolução da linguagem de marcação que é a base da web moderna. Este espaço é dedicado à documentação dos meus aprendizados, testes práticos e descobertas sobre os novos recursos e boas práticas introduzidas no HTML 5.3.Entre os tópicos abordados estão elementos semânticos, acessibilidade, integração com APIs modernas e suporte a aplicações progressivas.Este é um projeto em constante evolução, e estou animado para compartilhar meu progresso com você!</p>
+<a class="btn btn-secondary" href="https://fabiodellpozzo.github.io/HyperText-Markup-Language/">View details &raquo;</a>
+        </div>
+        <div class="col-md-5 order-md-1"> 
+          
+          <figure class="figure">
+              <img src="assets/developer.avif" class="figure-img img-fluid rounded" alt="...">
+              <figcaption class="figure-caption">
+                Foto de <a
+                  href="https://unsplash.com/pt-br/@nublson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nubelson
+                  Fernandes</a> na <a
+                  href="https://unsplash.com/pt-br/fotografias/caneca-de-ceramica-preta-e-branca-na-mesa-preta--Xqckh_XVU4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
+              </figcaption>
+            </figure>
+        </div>
+      </div>
+  
+      
+      <hr class="featurette-divider"> <!-- /END THE FEATURETTES -->
 
 
 
 
-      <div class="row pt-4">
 
-        <div class="col-lg-6">
+      
 
 
-          <picture class="bd-placeholder-img rounded-circle">
+        <p class="lh-base pt-4">Com novos elementos semânticos, melhor suporte a acessibilidade, segurança aprimorada e
+          incentivo ao uso de práticas seguras, como o uso de HTTPS e políticas de conteúdo. Integração com APIs
+          modernas:
+          como Web Components, Web Storage e Service Workers, facilitando o desenvolvimento de aplicações web
+          progressivas
+          (PWAs)</p>
+
+        <div class="row pt-4">
+<!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <picture class="bd-placeholder-img rounded-circle">
+              <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
+                role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/hard-drive-regular-full.svg"
+                type="image/svg+xml">
+              <img src="assets/hard-drive-regular-full.svg" class="img-fluid img-thumbnail"
+                class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
+                width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
+            </picture>
+            <h2 class="fw-normal">Web Storage</h2>
+            <p>Os dados podem ser armazenados no computador ou dispositivo móvel de um usuário, então os aplicativos da
+              web funcionam sem uma conexão com a Internet.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+
+<!-- /.col-lg-4 -->
+          <div class="col-lg-4">
             <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
-              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/hard-drive-regular-full.svg"
+              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/font-solid-full.svg"
               type="image/svg+xml">
-            <img src="assets/hard-drive-regular-full.svg" class="img-fluid img-thumbnail"
+            <img src="assets/font-solid-full.svg" class="img-fluid img-thumbnail"
               class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
               width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Web Storage</h2>
-          <p>Os dados podem ser armazenados no computador ou dispositivo móvel de um usuário, então os aplicativos da
-            web funcionam sem uma conexão com a Internet.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+            </picture>
+
+            <h2 class="fw-normal">Type</h2>
+            <p>As páginas da web podem ter um estilo mais chamativo com mais fontes, sombras, cores e outros efeitos.
+            </p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+
+<!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
+              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/arrow-pointer-solid-full.svg"
+              type="image/svg+xml">
+            <img src="assets/arrow-pointer-solid-full.svg" class="img-fluid img-thumbnail"
+              class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
+              width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
+            </picture>
+            <h2 class="fw-normal">Motion</h2>
+            <p>Objetos se movem nas páginas da Web e reagem aos movimentos de um cursor.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+
+<!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
+              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/gamepad-solid-full.svg"
+              type="image/svg+xml">
+            <img src="assets/gamepad-solid-full.svg" class="img-fluid img-thumbnail"
+              class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
+              width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
+            </picture>
+            <h2 class="fw-normal">Games</h2>
+            <p>Jogos interativos podem ser executados apenas com um navegador da Web, sem a necessidade de instalar
+              outros softwares ou plug-ins.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+   
+<!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
+              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/volume-high-solid-full.svg"
+              type="image/svg+xml">
+            <img src="assets/volume-high-solid-full.svg" class="img-fluid img-thumbnail"
+              class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
+              width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
+            </picture>
+            <h2 class="fw-normal">Audio</h2>
+            <p>O áudio é reproduzido sem uso de plug-ins.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+         
+<!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
+              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/cube-solid-full.svg"
+              type="image/svg+xml">
+            <img src="assets/cube-solid-full.svg" class="img-fluid img-thumbnail"
+              class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
+              width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
+            </picture>
+            <h2 class="fw-normal">3D</h2>
+            <p>A tecnologia chamada WebGL pode criar efeitos 3D interativos usando o processador gráfico de um
+              computador.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+        
+<!-- /.col-lg-4 -->
+          <div class="col-lg-4">
+            <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice"
+              role="img" width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/video-solid-full.svg"
+              type="image/svg+xml">
+            <img src="assets/video-solid-full.svg" class="img-fluid img-thumbnail"
+              class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
+              width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
+            </picture>
+            <h2 class="fw-normal">Video</h2>
+            <p>O vídeo pode ser incorporado em uma página da Web sem uso de plug-in.</p>
+            <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
+          </div>
+        
+
+
+
         </div>
-
-
-        <!-- /.col-lg-4 -->
-        <div class="col-lg-6">
-
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/font-solid-full.svg" type="image/svg+xml">
-          <img src="assets/font-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-
-          <h2 class="fw-normal">Type</h2>
-          <p>As páginas da web podem ter um estilo mais chamativo com mais fontes, sombras, cores e outros efeitos.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/arrow-pointer-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/arrow-pointer-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Motion</h2>
-          <p>Objetos se movem nas páginas da Web e reagem aos movimentos de um cursor.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div><!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/gamepad-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/gamepad-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Games</h2>
-          <p>Jogos interativos podem ser executados apenas com um navegador da Web, sem a necessidade de instalar outros softwares ou plug-ins.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/volume-high-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/volume-high-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Audio</h2>
-          <p>O áudio é reproduzido sem uso de plug-ins.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/cube-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/cube-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">3D</h2>
-          <p>A tecnologia chamada WebGL pode criar efeitos 3D interativos usando o processador gráfico de um computador.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-        <div class="col-lg-6">
-          <source class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" srcset="assets/video-solid-full.svg"
-            type="image/svg+xml">
-          <img src="assets/video-solid-full.svg" class="img-fluid img-thumbnail"
-            class="bd-placeholder-img rounded-circle" height="140" preserveAspectRatio="xMidYMid slice" role="img"
-            width="140" xmlns="http://www.w3.org/2000/svg" alt="...">
-          </picture>
-          <h2 class="fw-normal">Video</h2>
-          <p>O vídeo pode ser incorporado em uma página da Web sem uso de plug-in.</p>
-          <p><a class="btn btn-secondary" href="#">View details &raquo;</a></p>
-        </div>
-        <!-- /.col-lg-4 -->
-
-
-
       </div>
-    </div>
+
+
 
   </main>
 
-
-  <!-- /.row -->
-
-
-
-
-
-
-  <!-- Wrap the rest of the page in another container to center all the content. -->
-  <div class="container marketing"> <!-- Three columns of text below the carousel -->
-
-
-
-    <!-- /.row -->
-
-
-    <!-- START THE FEATURETTES -->
-    <hr class="featurette-divider">
-
-
-
-    <div class="row featurette">
-      <div class="col-md-7">
-        <h2 class="featurette-heading fw-normal lh-1">HTML 5.2 <span class="text-body-secondary">Developer</span></h2>
-        <p class="lead">Documentação de estudos versão 5.2</p>
-        <p><a class="btn btn-secondary" href="html5.html">View details &raquo;</a></p>
-      </div>
-      <div class="col-md-5">
-        <figure class="figure">
-          <img src="assets/developer.avif" class="figure-img img-fluid rounded" alt="...">
-          <figcaption class="figure-caption">
-            Foto de <a href="https://unsplash.com/pt-br/@nublson?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Nubelson Fernandes</a> na <a href="https://unsplash.com/pt-br/fotografias/caneca-de-ceramica-preta-e-branca-na-mesa-preta--Xqckh_XVU4?utm_content=creditCopyText&utm_medium=referral&utm_source=unsplash">Unsplash</a>
-          </figcaption>
-        </figure>
-      </div>
-    </div>
-<!--
+  <!--
     <hr class="featurette-divider">
 
     <div class="row featurette">
@@ -615,39 +611,39 @@ font-family: Consolas, 'Courier New', monospace;
 
 
 
-    </main>
+  </main>
   </div>
 
 
 
 
 
-    <script src="js/clipboard.js"></script>
-    <script src="js/snippets.js"></script>
-    <script src="js/tooltips.js"></script>
+  <script src="js/clipboard.js"></script>
+  <script src="js/snippets.js"></script>
+  <script src="js/tooltips.js"></script>
 
-    <script>hljs.highlightAll();</script>
+  <script>hljs.highlightAll();</script>
 
-    <script>
-      var clipboardDemos = new ClipboardJS('[data-clipboard-demo]');
+  <script>
+    var clipboardDemos = new ClipboardJS('[data-clipboard-demo]');
 
-        clipboardDemos.on('success', function(e) {
-            e.clearSelection();
+    clipboardDemos.on('success', function (e) {
+      e.clearSelection();
 
-            console.info('Action:', e.action);
-            console.info('Text:', e.text);
-            console.info('Trigger:', e.trigger);
+      console.info('Action:', e.action);
+      console.info('Text:', e.text);
+      console.info('Trigger:', e.trigger);
 
-            showTooltip(e.trigger, 'Copied!');
-        });
+      showTooltip(e.trigger, 'Copied!');
+    });
 
-        clipboardDemos.on('error', function(e) {
-            console.error('Action:', e.action);
-            console.error('Trigger:', e.trigger);
+    clipboardDemos.on('error', function (e) {
+      console.error('Action:', e.action);
+      console.error('Trigger:', e.trigger);
 
-            showTooltip(e.trigger, fallbackMessage(e.action));
-        });
-    </script>
+      showTooltip(e.trigger, fallbackMessage(e.action));
+    });
+  </script>
 
 
 
