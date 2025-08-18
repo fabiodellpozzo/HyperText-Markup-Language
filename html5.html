@@ -781,103 +781,104 @@
 
         <h2>Código DOM com implementação de estilo.</h2>
         <pre class="snippet"><code>
-<!doctype html>
-<html lang="pt-BR">
-<head>
-  <meta charset="UTF-8">
-  <title>Documentação de Estudos - HTML 5.3</title>
-  <style>
-    body {
-      font-family: Arial, sans-serif;
-      margin: 0;
-      background-color: #f4f4f4;
-      color: #333;
+<pre style="font-family:monospace;color: rgb(220, 220, 220); background-color: rgb(30, 30, 30); font-weight: 400; "><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;!DOCTYPE <span style="color: rgb(86, 156, 214); font-weight: 400;">html</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">html</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">lang</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"pt-BR"</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">head</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">meta</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">charset</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"UTF-8"</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">title</span>&gt;</span>Documentação de Estudos - HTML 5.3<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">title</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">style</span>&gt;</span><span style="color: rgb(220, 220, 220); font-weight: 400;">
+    <span style="color: rgb(215, 186, 125); font-weight: 400;">body</span> {
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">font-family</span>: Arial, sans-serif;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">margin</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">0</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">background-color</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">#f4f4f4</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">color</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">#333</span>;
     }
-    header, nav, footer {
-      background-color: #005f73;
-      color: white;
-      padding: 20px;
-      text-align: center;
+    <span style="color: rgb(215, 186, 125); font-weight: 400;">header</span>, <span style="color: rgb(215, 186, 125); font-weight: 400;">nav</span>, <span style="color: rgb(215, 186, 125); font-weight: 400;">footer</span> {
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">background-color</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">#005f73</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">color</span>: white;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">padding</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">20px</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">text-align</span>: center;
     }
-    nav a {
-      color: white;
-      margin: 0 15px;
-      text-decoration: none;
-      font-weight: bold;
+    <span style="color: rgb(215, 186, 125); font-weight: 400;">nav</span> <span style="color: rgb(215, 186, 125); font-weight: 400;">a</span> {
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">color</span>: white;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">margin</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">0</span> <span style="color: rgb(184, 215, 163); font-weight: 400;">15px</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">text-decoration</span>: none;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">font-weight</span>: bold;
     }
-    main {
-      display: flex;
-      margin: 20px;
+    <span style="color: rgb(215, 186, 125); font-weight: 400;">main</span> {
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">display</span>: flex;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">margin</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">20px</span>;
     }
-    section {
-      flex: 3;
-      padding: 20px;
-      background-color: white;
-      border-radius: 8px;
-      box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    <span style="color: rgb(215, 186, 125); font-weight: 400;">section</span> {
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">flex</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">3</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">padding</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">20px</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">background-color</span>: white;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">border-radius</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">8px</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">box-shadow</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">0</span> <span style="color: rgb(184, 215, 163); font-weight: 400;">0</span> <span style="color: rgb(184, 215, 163); font-weight: 400;">10px</span> <span style="color: rgb(78, 201, 176); font-weight: 400;">rgba</span>(<span style="color: rgb(184, 215, 163); font-weight: 400;">0</span>,<span style="color: rgb(184, 215, 163); font-weight: 400;">0</span>,<span style="color: rgb(184, 215, 163); font-weight: 400;">0</span>,<span style="color: rgb(184, 215, 163); font-weight: 400;">0.1</span>);
     }
-    aside {
-      flex: 1;
-      margin-left: 20px;
-      padding: 20px;
-      background-color: #e0f7fa;
-      border-radius: 8px;
+    <span style="color: rgb(215, 186, 125); font-weight: 400;">aside</span> {
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">flex</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">1</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">margin-left</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">20px</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">padding</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">20px</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">background-color</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">#e0f7fa</span>;
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">border-radius</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">8px</span>;
     }
-    footer {
-      margin-top: 40px;
+    <span style="color: rgb(215, 186, 125); font-weight: 400;">footer</span> {
+      <span style="color: rgb(156, 220, 254); font-weight: 400;">margin-top</span>: <span style="color: rgb(184, 215, 163); font-weight: 400;">40px</span>;
     }
-  </style>
-</head>
-<body>
-  <header>
-    <h1>Documentação de Estudos - HTML 5.3</h1>
-  </header>
+  </span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">style</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">head</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">body</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">header</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h1</span>&gt;</span>Documentação de Estudos - HTML 5.3<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h1</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">header</span>&gt;</span>
 
-  <nav>
-    <a href="#introducao">Introdução</a>
-    <a href="#recursos">Recursos</a>
-    <a href="#contato">Contato</a>
-  </nav>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">nav</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">href</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"#introducao"</span>&gt;</span>Introdução<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">href</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"#recursos"</span>&gt;</span>Recursos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">href</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"#contato"</span>&gt;</span>Contato<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">a</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">nav</span>&gt;</span>
 
-  <main>
-    <section id="introducao">
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">main</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">section</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">id</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"introducao"</span>&gt;</span>
 
-      <h2>Olá! Meu nome é Fabio e estou atualmente estudando a versão 5.3 do HTML, uma evolução da linguagem de marcação que é a base da web moderna.</h2>
-      <p>Este espaço é dedicado à documentação dos meus aprendizados, testes práticos e descobertas sobre os novos recursos e boas práticas introduzidas no HTML 5.3.</p>
-      <p>Entre os tópicos abordados estão elementos semânticos, acessibilidade, integração com APIs modernas e suporte a aplicações progressivas.</p>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h2</span>&gt;</span>Olá! Meu nome é Fabio e estou atualmente estudando a versão 5.3 do HTML, uma evolução da linguagem de marcação que é a base da web moderna.<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h2</span>&gt;</span>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>Este espaço é dedicado à documentação dos meus aprendizados, testes práticos e descobertas sobre os novos recursos e boas práticas introduzidas no HTML 5.3.<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>Entre os tópicos abordados estão elementos semânticos, acessibilidade, integração com APIs modernas e suporte a aplicações progressivas.<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
 
 
-      <article>
-        <h2>Este é um projeto em constante evolução</h2>
-        <h3>Estou animado para compartilhar meu progresso com você!</h3>
-          <ul>
-            <li>infos</li>
-              <li>infos</li>
-              <li>infos</li>
-          </ul>
-        <h3>Subtitulo</h3>
-          <ol>
-            <li>infos</li>
-            <li>infos</li>
-            <li>infos</li>
-          </ol>
-      </article>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">article</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h2</span>&gt;</span>Este é um projeto em constante evolução<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h2</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>Estou animado para compartilhar meu progresso com você!<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>
+          <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">ul</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+              <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+              <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+          <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">ul</span>&gt;</span>
+        <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>Subtitulo<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>
+          <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">ol</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+            <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>infos<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">li</span>&gt;</span>
+          <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">ol</span>&gt;</span>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">article</span>&gt;</span>
 
-    </section>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">section</span>&gt;</span>
 
-    <aside>
-      <h3>Dica rápida</h3>
-      <p>Use o elemento <code>&lt;dialog&gt;</code> para criar caixas de diálogo nativas e acessíveis.</p>
-      <p>Explore também <code>&lt;template&gt;</code> e <code>&lt;slot&gt;</code> para Web Components!</p>
-    </aside>
-  </main>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">aside</span>&gt;</span>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>Dica rápida<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">h3</span>&gt;</span>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>Use o elemento <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">code</span>&gt;</span><span style="color: rgb(86, 156, 214); font-weight: 400;">&amp;lt;</span>dialog<span style="color: rgb(86, 156, 214); font-weight: 400;">&amp;gt;</span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">code</span>&gt;</span> para criar caixas de diálogo nativas e acessíveis.<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
+      <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>Explore também <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">code</span>&gt;</span><span style="color: rgb(86, 156, 214); font-weight: 400;">&amp;lt;</span>template<span style="color: rgb(86, 156, 214); font-weight: 400;">&amp;gt;</span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">code</span>&gt;</span> e <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">code</span>&gt;</span><span style="color: rgb(86, 156, 214); font-weight: 400;">&amp;lt;</span>slot<span style="color: rgb(86, 156, 214); font-weight: 400;">&amp;gt;</span><span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">code</span>&gt;</span> para Web Components!<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">aside</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">main</span>&gt;</span>
 
-  <footer id="contato">
-    <p>© 2025 Fabio Dell Pozzo — Todos os direitos reservados.</p>
-    <p>Contato: fabiodellpozzo@gmail.com</p>
-  </footer>
-</body>
-</html>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">footer</span> <span style="color: rgb(156, 220, 254); font-weight: 400;">id</span>=<span style="color: rgb(214, 157, 133); font-weight: 400;">"contato"</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>© 2025 Fabio Dell Pozzo — Todos os direitos reservados.<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
+    <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>Contato: fabiodellpozzo@gmail.com<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">p</span>&gt;</span>
+  <span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">footer</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">body</span>&gt;</span>
+<span style="color: rgb(155, 155, 155); font-weight: 400;">&lt;/<span style="color: rgb(86, 156, 214); font-weight: 400;">html</span>&gt;</span>
+</pre>
         </code></pre>
 
     </main>
